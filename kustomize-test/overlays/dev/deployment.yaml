@@ -6,3 +6,11 @@ metadata:
    deployment: demo
 spec:
   replicas: 2
+  template:
+    metadata:
+      labels:
+        deployment: demo
+    spec:
+      containers:
+      - name: the-container
+        image: nginx
