@@ -16,7 +16,7 @@ helmCharts:
   repo: https://charts.bitnami.com/bitnami
   version: 18.2.2
   releaseName: nginx
-  namespace: testNamespace
+  namespace: test-namespace
   # valuesFile: values.yaml
   # additionalValuesFiles:
   # - values-file-1.yml
