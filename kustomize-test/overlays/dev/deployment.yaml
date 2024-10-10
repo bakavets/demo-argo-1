@@ -1,0 +1,8 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: the-deployment-dev
+ labels:
+   deployment: demo
+spec:
+  replicas: 2

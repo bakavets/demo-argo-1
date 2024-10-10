@@ -1,0 +1,32 @@
+commonLabels:
+  app: demo-dev
+
+resources:
+- ../../base
+
+namePrefix: dev-
+
+resources:
+- deployment.yaml
+# - service.yaml
+# - configMap.yaml
+
+helmCharts:
+- name: nginx
+  repo: https://charts.bitnami.com/bitnami
+  version: 18.2.2
+  releaseName: nginx
+  namespace: testNamespace
+  # valuesFile: values.yaml
+  # additionalValuesFiles:
+  # - values-file-1.yml
+  # - values-file-2.yml
+
+# helmChartInflationGenerator:
+#   - chartRepoUrl: https://grafana.github.io/helm-charts
+#     chartName: grafana
+#     releaseName: grafana
+#     releaseNamespace: monitoring
+
+# generators:
+# - helmChart.yaml
