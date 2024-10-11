@@ -1,0 +1,6 @@
+dependencies:
+- name: fluentd-http
+  repository: https://cgx.jfrog.io/artifactory/coralogix-charts-virtual
+  version: 0.0.11
+digest: sha256:c8a91e3b31b12d749eda649aa78553383e51136aa188905ab445b47350e5cdcf
+generated: "2024-10-11T10:22:51.116214+02:00"
